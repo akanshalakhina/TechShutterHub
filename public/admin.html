@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studio Portal &amp; Content Manager | TECH SHUTTER HUB</title>
+  <link rel="icon" href="/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="/css/theme.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <style>
+    body {
+      overflow-y: auto !important;
+      height: auto !important;
+      background: var(--bg-canvas);
+      padding: 100px 24px 60px;
+    }
+    .admin-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .admin-tabs {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 12px;
+    }
+    .admin-tab {
+      background: var(--bg-surface);
+      color: var(--text-muted);
+      border: 1px solid var(--border-subtle);
+      padding: 10px 22px;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      transition: all 0.2s;
+    }
+    .admin-tab.active {
+      color: var(--text-inverse);
+      background: linear-gradient(135deg, var(--brand-gold-bright), var(--brand-gold));
+      border-color: var(--brand-gold-bright);
+    }
+    .admin-panel {
+      display: none;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-brand);
+      border-radius: var(--radius-md);
+      padding: 32px;
+      box-shadow: var(--shadow-card);
+    }
+    .admin-panel.active {
+      display: block;
+    }
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-bottom: 30px;
+    }
+    .stat-card {
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 20px;
+      text-align: center;
+    }
+    .stat-num {
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--brand-gold);
+      font-family: var(--font-brand);
+    }
+    .stat-lbl {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 18px;
+    }
+    th, td {
+      padding: 14px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--border-subtle);
+      font-size: 13px;
+    }
+    th {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--brand-gold);
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      background: var(--brand-gold-subtle);
+      color: var(--brand-gold);
+      border: 1px solid var(--brand-gold);
+    }
+    .btn-action {
+      background: transparent;
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      padding: 6px 12px;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      font-size: 12px;
+      margin-right: 6px;
+      transition: all 0.2s;
+    }
+    .btn-action.delete:hover {
+      background: #ef4444;
+      border-color: #ef4444;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Nav -->
+  <header class="tsh-nav" role="banner">
+    <div class="tsh-nav-left">
+      <a href="/" class="brand-badge">
+        <img class="brand-logo-img" src="/assets/logos/logo-dark-transparent.png" alt="Logo" />
+        <div class="brand-text">
+          <span class="brand-name">Tech Shutter Hub</span>
+          <span class="brand-sub">Admin Portal</span>
+        </div>
+      </a>
+    </div>
+    <div class="tsh-nav-right">
+      <button class="nav-btn theme-toggle-btn" title="Toggle Theme">
+        <svg class="theme-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+        </svg>
+        <span class="lbl theme-text">Theme</span>
+      </button>
+      <a href="/" class="nav-btn btn-cta">Back to 3D Wall</a>
+    </div>
+  </header>
+
+  <div class="admin-container">
+    <div class="stats-row" id="statsRow">
+      <div class="stat-card">
+        <div class="stat-num" id="statProjects">-</div>
+        <div class="stat-lbl">Active Projects</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num" id="statCategories">-</div>
+        <div class="stat-lbl">Categories</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num" id="statInquiries">-</div>
+        <div class="stat-lbl">Client Inquiries</div>
+      </div>
+    </div>
+
+    <div class="admin-tabs">
+      <button class="admin-tab active" data-tab="tabProjects">Portfolio Projects</button>
+      <button class="admin-tab" data-tab="tabAdd">Add New Project</button>
+      <button class="admin-tab" data-tab="tabInquiries">Inquiries Received</button>
+    </div>
+
+    <!-- Panel 1: Projects Table -->
+    <div class="admin-panel active" id="tabProjects">
+      <h3>Portfolio Projects</h3>
+      <table id="projectsTable">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Category</th>
+            <th>Media</th>
+            <th>Year</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <!-- Panel 2: Add Project Form -->
+    <div class="admin-panel" id="tabAdd">
+      <h3>Add New Portfolio Project</h3>
+      <p style="color: var(--text-muted); font-size: 13px; margin-bottom: 20px;">
+        Add a photo, video link, category, and description. It will immediately appear on the 3D Wall and Grid View.
+      </p>
+      <form id="addProjectForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Project Title *</label>
+            <input type="text" id="newTitle" class="form-control" placeholder="e.g. ARRI Alexa 35 Short Film" required />
+          </div>
+          <div class="form-group">
+            <label>Category *</label>
+            <input type="text" id="newCategory" class="form-control" placeholder="e.g. Cinematography" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Video Stream / MP4 URL</label>
+            <input type="url" id="newVideo" class="form-control" placeholder="https://...mp4 or iframe embed" />
+          </div>
+          <div class="form-group">
+            <label>Cover Photo URL *</label>
+            <input type="url" id="newImage" class="form-control" placeholder="https://images.unsplash.com/..." required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Client / Brand</label>
+            <input type="text" id="newClient" class="form-control" placeholder="e.g. Sony Cine" />
+          </div>
+          <div class="form-group">
+            <label>Tags (comma separated)</label>
+            <input type="text" id="newTags" class="form-control" placeholder="Cinema, 4K, Anamorphic" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Description</label>
+          <textarea id="newDesc" class="form-control" placeholder="Technical breakdown or production notes..."></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Publish Project &rarr;</button>
+        <div class="form-status" id="addStatus"></div>
+      </form>
+    </div>
+
+    <!-- Panel 3: Inquiries -->
+    <div class="admin-panel" id="tabInquiries">
+      <h3>Incoming Client Booking Requests</h3>
+      <table id="inquiriesTable">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Client Name</th>
+            <th>Email</th>
+            <th>Service</th>
+            <th>Budget</th>
+            <th>Message</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="/js/theme.js"></script>
+  <script>
+    // Tab switching
+    document.querySelectorAll('.admin-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.admin-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.admin-panel').forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.tab).classList.add('active');
+      });
+    });
+
+    async function loadAdminData() {
+      // Stats
+      try {
+        const res = await fetch('/api/stats');
+        const data = await res.json();
+        document.getElementById('statProjects').textContent = data.totalProjects;
+        document.getElementById('statCategories').textContent = data.totalCategories;
+        document.getElementById('statInquiries').textContent = data.totalInquiries;
+      } catch (e) {}
+
+      // Projects
+      try {
+        const res = await fetch('/api/projects');
+        const json = await res.json();
+        const tbody = document.querySelector('#projectsTable tbody');
+        tbody.innerHTML = '';
+        (json.data || []).forEach(p => {
+          const tr = document.createElement('tr');
+          tr.innerHTML = `
+            <td><strong>${p.title}</strong></td>
+            <td><span class="badge">${p.category}</span></td>
+            <td>${p.video ? '🎬 Video + Photo' : '📷 Photo Album'}</td>
+            <td>${p.year || ''}</td>
+            <td>
+              <button class="btn-action delete" onclick="deleteProject('${p.id}')">Delete</button>
+            </td>
+          `;
+          tbody.appendChild(tr);
+        });
+      } catch (e) {}
+
+      // Inquiries
+      try {
+        const res = await fetch('/api/inquiries');
+        const json = await res.json();
+        const tbody = document.querySelector('#inquiriesTable tbody');
+        tbody.innerHTML = '';
+        (json.data || []).forEach(inq => {
+          const tr = document.createElement('tr');
+          const dt = inq.createdAt ? new Date(inq.createdAt).toLocaleDateString() : '';
+          tr.innerHTML = `
+            <td>${dt}</td>
+            <td><strong>${inq.name}</strong></td>
+            <td><a href="mailto:${inq.email}" style="color:var(--brand-gold);">${inq.email}</a></td>
+            <td><span class="badge">${inq.projectType}</span></td>
+            <td>${inq.budget || '-'}</td>
+            <td>${inq.message || '-'}</td>
+          `;
+          tbody.appendChild(tr);
+        });
+      } catch (e) {}
+    }
+
+    async function deleteProject(id) {
+      if (!confirm('Are you sure you want to remove this project?')) return;
+      try {
+        const res = await fetch('/api/projects/' + id, { method: 'DELETE' });
+        const data = await res.json();
+        if (data.success) {
+          loadAdminData();
+        }
+      } catch (e) {
+        alert('Failed to delete project');
+      }
+    }
+
+    // Add project form submission
+    document.getElementById('addProjectForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const payload = {
+        title: document.getElementById('newTitle').value,
+        category: document.getElementById('newCategory').value,
+        video: document.getElementById('newVideo').value,
+        image: document.getElementById('newImage').value,
+        client: document.getElementById('newClient').value,
+        tags: document.getElementById('newTags').value,
+        description: document.getElementById('newDesc').value
+      };
+
+      const status = document.getElementById('addStatus');
+      try {
+        const res = await fetch('/api/projects', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const data = await res.json();
+        if (data.success) {
+          status.className = 'form-status success';
+          status.textContent = '✓ Project published successfully!';
+          status.style.display = 'block';
+          document.getElementById('addProjectForm').reset();
+          loadAdminData();
+        } else {
+          throw new Error(data.message);
+        }
+      } catch (err) {
+        status.className = 'form-status error';
+        status.textContent = '✕ ' + err.message;
+        status.style.display = 'block';
+      }
+    });
+
+    document.addEventListener('DOMContentLoaded', loadAdminData);
+  </script>
+</body>
+</html>

@@ -1,0 +1,373 @@
+[
+  {
+    "id": "tsh-01",
+    "title": "RED V-Raptor 8K Cinema Rig",
+    "category": "Tech & Gear Reviews",
+    "client": "Tech Shutter Hub Lab",
+    "year": "2026",
+    "description": "Comprehensive cinematic breakdown and field test of the RED V-Raptor 8K VV sensor in low-light architectural setups with anamorphic prime lenses.",
+    "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+    "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1600&q=85",
+      "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1600&q=85",
+      "https://images.unsplash.com/photo-1500462859233-a792df9a09e3?auto=format&fit=crop&w=1600&q=85"
+    ],
+    "orientation": "landscape",
+    "tags": ["Cinema", "8K", "Anamorphic", "RED"]
+  },
+  {
+    "id": "tsh-02",
+    "title": "Aperture & Light Masterclass",
+    "category": "Cinematography",
+    "client": "Apex Film Studio",
+    "year": "2026",
+    "description": "Exploring high dynamic range lighting, negative fill techniques, and depth-of-field control using master vintage primes.",
+    "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+    "image": "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1600&q=85",
+      "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1600&q=85"
+    ],
+    "orientation": "landscape",
+    "tags": ["Lighting", "Masterclass", "Studio"]
+  },
+  {
+    "id": "tsh-03",
+    "title": "Leica M11-P Rangefinder Soul",
+    "category": "Tech & Gear Reviews",
+    "client": "Leica Showcase",
+    "year": "2026",
+    "description": "Deep tactile review of the Leica M11-P Content Credentials camera on the streets of Tokyo and Kyoto.",
+    "video": "",
+    "image": "https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?auto=format&fit=crop&w=1600&q=85",
+      "https://images.unsplash.com/photo-1500462859233-a792df9a09e3?auto=format&fit=crop&w=1600&q=85"
+    ],
+    "orientation": "landscape",
+    "tags": ["Leica", "Street", "Rangefinder"]
+  },
+  {
+    "id": "tsh-04",
+    "title": "Nordic Solitude Commercial",
+    "category": "Brand Commercials",
+    "client": "Vanguard Outerwear",
+    "year": "2025",
+    "description": "Brand film shot along the black sand beaches of Vik and glaciers of Iceland, highlighting rugged weatherproofing.",
+    "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+    "image": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1600&q=85",
+      "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=85"
+    ],
+    "orientation": "landscape",
+    "tags": ["Iceland", "Commercial", "Landscape"]
+  },
+  {
+    "id": "tsh-05",
+    "title": "Inspire 3 Twilight Flyover",
+    "category": "Drone & Aerial",
+    "client": "Skylark Horizons",
+    "year": "2026",
+    "description": "Dual-operator cinematic drone flight captures over mountainous coastal terrain using full-frame ProRes RAW recording.",
+    "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+    "image": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1600&q=85",
+      "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1600&q=85"
+    ],
+    "orientation": "landscape",
+    "tags": ["Drone", "FPV", "Aerial", "RAW"]
+  },
+  {
+    "id": "tsh-06",
+    "title": "Minimalist Timepiece Macro",
+    "category": "Product Shoots",
+    "client": "Chronos Horology",
+    "year": "2026",
+    "description": "Macro probe lens camera moves revealing the intricate escapement and hand-polished beveling of a Swiss tourbillon.",
+    "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+    "image": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1600&q=85",
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1600&q=85"
+    ],
+    "orientation": "landscape",
+    "tags": ["Macro", "Product", "Horology", "Luxury"]
+  },
+  {
+    "id": "tsh-07",
+    "title": "Elysian Noir Portrait Series",
+    "category": "Studio & Portraits",
+    "client": "Vogue Editorial Concept",
+    "year": "2026",
+    "description": "Editorial studio shoot exploring chisel rim lighting, high-contrast chiaroscuro shadows, and silk texture reflections.",
+    "video": "",
+    "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1600&q=85",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1600&q=85",
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1600&q=85"
+    ],
+    "orientation": "landscape",
+    "tags": ["Portrait", "Chiaroscuro", "Studio"]
+  },
+  {
+    "id": "tsh-08",
+    "title": "Neon Symphony Concert Film",
+    "category": "Events & Live",
+    "client": "Aether Sound Festival",
+    "year": "2025",
+    "description": "Multi-camera live music capture featuring synchronized handheld gimbal rigs and 4K high-frame-rate stage dynamics.",
+    "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyBlazes.mp4",
+    "image": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1600&q=85",
+      "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1600&q=85"
+    ],
+    "orientation": "landscape",
+    "tags": ["Concert", "Stage", "Live", "Gimbal"]
+  },
+  {
+    "id": "tsh-09",
+    "title": "Amalfi Coast Romance",
+    "category": "Weddings & Films",
+    "client": "Elena & Matteo",
+    "year": "2025",
+    "description": "Dreamy 35mm and digital cinematic wedding film overlooking the cliffs of Positano with golden hour Mediterranean light.",
+    "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4",
+    "image": "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=85",
+      "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1600&q=85"
+    ],
+    "orientation": "landscape",
+    "tags": ["Wedding", "Italy", "Cinematic", "35mm"]
+  },
+  {
+    "id": "tsh-10",
+    "title": "Sony FX6 Color Grading Workflow",
+    "category": "Tech & Gear Reviews",
+    "client": "Tech Shutter Hub Academy",
+    "year": "2026",
+    "description": "Deep dive into S-Cinetone vs S-Log3 with custom gold & emerald LUT profiles designed specifically for Tech Shutter Hub.",
+    "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+    "image": "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1600&q=85"
+    ],
+    "orientation": "landscape",
+    "tags": ["Sony", "Color Grading", "S-Log3", "LUTs"]
+  },
+  {
+    "id": "tsh-11",
+    "title": "Cyberpunk City Midnight Drive",
+    "category": "Cinematography",
+    "client": "Velocity Media",
+    "year": "2026",
+    "description": "Anamorphic night drive through neon-drenched downtown reflections with customized car-rigged motorized sliders.",
+    "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackSeeTheWorld.mp4",
+    "image": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1600&q=85"
+    ],
+    "orientation": "landscape",
+    "tags": ["Night", "Anamorphic", "Automotive"]
+  },
+  {
+    "id": "tsh-12",
+    "title": "Aero Carbon Fiber Tripod",
+    "category": "Product Shoots",
+    "client": "Titan Rigging Co.",
+    "year": "2026",
+    "description": "Clean, dynamic studio lighting and fluid motion control highlighting ultra-light carbon weave and titanium fluid heads.",
+    "video": "",
+    "image": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1600&q=85"
+    ],
+    "orientation": "landscape",
+    "tags": ["Hardware", "Carbon", "Studio"]
+  },
+  {
+    "id": "tsh-13",
+    "title": "Hasselblad 100MP Medium Format",
+    "category": "Tech & Gear Reviews",
+    "client": "Hasselblad Masters Project",
+    "year": "2026",
+    "description": "Pushing 100 megapixels to the extreme: studio still-life and architectural hyper-resolutions with natural color calibration.",
+    "video": "",
+    "image": "https://images.unsplash.com/photo-1500462859233-a792df9a09e3?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1500462859233-a792df9a09e3?auto=format&fit=crop&w=1600&q=85"
+    ],
+    "orientation": "landscape",
+    "tags": ["Medium Format", "100MP", "Hasselblad"]
+  },
+  {
+    "id": "tsh-14",
+    "title": "Alpine Peak Sunrise Cinematic",
+    "category": "Drone & Aerial",
+    "client": "Swiss Tourism Board",
+    "year": "2025",
+    "description": "Sub-zero mountain flight traversing Matterhorn ridges at golden dawn with high-altitude custom tuned FPV rigs.",
+    "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4",
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=85"
+    ],
+    "orientation": "landscape",
+    "tags": ["Alps", "FPV", "Sunrise", "Aerial"]
+  },
+  {
+    "id": "tsh-15",
+    "title": "Monolith Architectural Living",
+    "category": "Brand Commercials",
+    "client": "Kaufmann Architecture",
+    "year": "2026",
+    "description": "Architectural showcase capturing cast-concrete lines, floor-to-ceiling glass pavilions, and ambient interior lighting transitions.",
+    "video": "",
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=85"
+    ],
+    "orientation": "landscape",
+    "tags": ["Architecture", "Modern", "Interior"]
+  },
+  {
+    "id": "tsh-16",
+    "title": "Chinatown Wet Pavement Stories",
+    "category": "Cinematography",
+    "client": "San Francisco Film Society",
+    "year": "2025",
+    "description": "Atmospheric slow-motion documentary short capturing foggy rain reflections and lantern glow through 50mm f/0.95 glass.",
+    "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+    "image": "https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=1600&q=85"
+    ],
+    "orientation": "landscape",
+    "tags": ["Documentary", "Rain", "Night", "Atmosphere"]
+  },
+  {
+    "id": "tsh-17",
+    "title": "Acoustic Sessions in Vault 4",
+    "category": "Events & Live",
+    "client": "Echo Chamber Music",
+    "year": "2026",
+    "description": "Intimate acoustic showcase inside a historic stone cellar with warm tungsten practicals and ribbon mic setups.",
+    "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+    "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1600&q=85"
+    ],
+    "orientation": "landscape",
+    "tags": ["Acoustic", "Live Music", "Tungsten"]
+  },
+  {
+    "id": "tsh-18",
+    "title": "Golden Hour Tuscany Vows",
+    "category": "Weddings & Films",
+    "client": "Sophia & Lucas",
+    "year": "2025",
+    "description": "Cypress-lined villa wedding celebration captured across sunset, twilight speeches, and sparkler illuminated night dances.",
+    "video": "",
+    "image": "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1600&q=85"
+    ],
+    "orientation": "landscape",
+    "tags": ["Tuscany", "Wedding", "Sunset"]
+  },
+  {
+    "id": "tsh-19",
+    "title": "Wireless Video Transmission Test",
+    "category": "Tech & Gear Reviews",
+    "client": "Tech Shutter Hub Lab",
+    "year": "2026",
+    "description": "Stress-testing zero-latency wireless HDMI/SDI transmitters in dense urban RF environments up to 1,500 feet.",
+    "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+    "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1600&q=85"
+    ],
+    "orientation": "landscape",
+    "tags": ["Wireless", "SDI", "Gear Review", "Tech"]
+  },
+  {
+    "id": "tsh-20",
+    "title": "Artisan Espresso Pour Macro",
+    "category": "Product Shoots",
+    "client": "Caelum Roasters",
+    "year": "2026",
+    "description": "Super-slow-motion 1000fps capture of crema extraction, micro-foam pouring, and roast bean textures.",
+    "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1600&q=85"
+    ],
+    "orientation": "landscape",
+    "tags": ["High Speed", "Macro", "Coffee", "Commercial"]
+  },
+  {
+    "id": "tsh-21",
+    "title": "Sculptural Silhouette Portraits",
+    "category": "Studio & Portraits",
+    "client": "Atelier Form",
+    "year": "2026",
+    "description": "Minimal monochrome lighting study framing human silhouettes against frosted acrylic diffusers and warm backlight.",
+    "video": "",
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1600&q=85"
+    ],
+    "orientation": "landscape",
+    "tags": ["Monochrome", "Silhouette", "Studio"]
+  },
+  {
+    "id": "tsh-22",
+    "title": "Pacific Coastline Highway Cruise",
+    "category": "Brand Commercials",
+    "client": "Electra EV Supercars",
+    "year": "2026",
+    "description": "Russian Arm chase vehicle shots chasing an electric grand tourer along Big Sur coastline bends at dusk.",
+    "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackSeeTheWorld.mp4",
+    "image": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1600&q=85"
+    ],
+    "orientation": "landscape",
+    "tags": ["Automotive", "Supercar", "Big Sur", "Tracking"]
+  },
+  {
+    "id": "tsh-23",
+    "title": "Islands of Mist Drone Odyssey",
+    "category": "Drone & Aerial",
+    "client": "Discovery Earth Series",
+    "year": "2025",
+    "description": "Hovering above rolling cloud inversions over dramatic volcanic sea stacks at morning blue hour.",
+    "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=85"
+    ],
+    "orientation": "landscape",
+    "tags": ["Aerial", "Nature", "Islands", "Blue Hour"]
+  },
+  {
+    "id": "tsh-24",
+    "title": "Vintage Cooke Anamorphic Bokeh",
+    "category": "Cinematography",
+    "client": "Tech Shutter Hub Optical Lab",
+    "year": "2026",
+    "description": "Analysis of oval bokeh highlights, horizontal streak flares, and barrel distortion characteristics on large-format digital sensors.",
+    "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+    "image": "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1600&q=85"
+    ],
+    "orientation": "landscape",
+    "tags": ["Anamorphic", "Cooke", "Optics", "Flares"]
+  }
+]
